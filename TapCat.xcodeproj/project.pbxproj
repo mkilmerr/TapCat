@@ -17,6 +17,8 @@
 		64A7A585248AFBF400B7005A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7A584248AFBF400B7005A /* main.m */; };
 		64A7A58F248AFBF400B7005A /* TapCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7A58E248AFBF400B7005A /* TapCatTests.m */; };
 		64A7A59A248AFBF400B7005A /* TapCatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A7A599248AFBF400B7005A /* TapCatUITests.m */; };
+		64A7A5AA248B0A3700B7005A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A7A5A9248B0A3700B7005A /* AudioToolbox.framework */; };
+		64C46AAB248B0B140023AF48 /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 64C46AAA248B0B140023AF48 /* Cat.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		64A7A595248AFBF400B7005A /* TapCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A7A599248AFBF400B7005A /* TapCatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapCatUITests.m; sourceTree = "<group>"; };
 		64A7A59B248AFBF400B7005A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64A7A5A9248B0A3700B7005A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		64C46AAA248B0B140023AF48 /* Cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Cat.wav; path = "../../../../Downloads/My First App/Resources/Cat.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A7A5AA248B0A3700B7005A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,7 @@
 				64A7A58D248AFBF400B7005A /* TapCatTests */,
 				64A7A598248AFBF400B7005A /* TapCatUITests */,
 				64A7A56D248AFBF200B7005A /* Products */,
+				64A7A5A8248B0A3600B7005A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,16 +112,12 @@
 		64A7A56E248AFBF200B7005A /* TapCat */ = {
 			isa = PBXGroup;
 			children = (
-				64A7A56F248AFBF200B7005A /* AppDelegate.h */,
-				64A7A570248AFBF200B7005A /* AppDelegate.m */,
-				64A7A572248AFBF200B7005A /* SceneDelegate.h */,
-				64A7A573248AFBF200B7005A /* SceneDelegate.m */,
-				64A7A575248AFBF200B7005A /* ViewController.h */,
-				64A7A576248AFBF200B7005A /* ViewController.m */,
-				64A7A578248AFBF200B7005A /* Main.storyboard */,
+				64A7A5AC248B0A4F00B7005A /* Constructor */,
+				64A7A5AB248B0A3D00B7005A /* Controller */,
+				64A7A5A7248AFC1B00B7005A /* View */,
 				64A7A57E248AFBF400B7005A /* Assets.xcassets */,
-				64A7A580248AFBF400B7005A /* LaunchScreen.storyboard */,
 				64A7A583248AFBF400B7005A /* Info.plist */,
+				64C46AAA248B0B140023AF48 /* Cat.wav */,
 				64A7A584248AFBF400B7005A /* main.m */,
 				64A7A57B248AFBF200B7005A /* TapCat.xcdatamodeld */,
 			);
@@ -138,6 +140,43 @@
 				64A7A59B248AFBF400B7005A /* Info.plist */,
 			);
 			path = TapCatUITests;
+			sourceTree = "<group>";
+		};
+		64A7A5A7248AFC1B00B7005A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64A7A580248AFBF400B7005A /* LaunchScreen.storyboard */,
+				64A7A578248AFBF200B7005A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64A7A5A8248B0A3600B7005A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64A7A5A9248B0A3700B7005A /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64A7A5AB248B0A3D00B7005A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64A7A575248AFBF200B7005A /* ViewController.h */,
+				64A7A576248AFBF200B7005A /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64A7A5AC248B0A4F00B7005A /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				64A7A570248AFBF200B7005A /* AppDelegate.m */,
+				64A7A56F248AFBF200B7005A /* AppDelegate.h */,
+				64A7A573248AFBF200B7005A /* SceneDelegate.m */,
+				64A7A572248AFBF200B7005A /* SceneDelegate.h */,
+			);
+			path = Constructor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +285,7 @@
 				64A7A582248AFBF400B7005A /* LaunchScreen.storyboard in Resources */,
 				64A7A57F248AFBF400B7005A /* Assets.xcassets in Resources */,
 				64A7A57A248AFBF200B7005A /* Main.storyboard in Resources */,
+				64C46AAB248B0B140023AF48 /* Cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
